@@ -3,7 +3,7 @@ int diceSum=0;
 
 void setup()
 {
-  size(250, 300);
+  size(250, 280);
   textAlign(CENTER, CENTER);
   noLoop();
 }
@@ -31,13 +31,13 @@ void draw()
 void mousePressed()
 {
   redraw();
-   oneCount = 0; 
-   twoCount = 0;
-   threeCount = 0;
-   fourCount = 0;
-   fiveCount = 0;
-   sixCount = 0;
-   diceSum = 0;
+  oneCount = 0; 
+  twoCount = 0;
+  threeCount = 0;
+  fourCount = 0;
+  fiveCount = 0;
+  sixCount = 0;
+  diceSum = 0;
 }
 class Die //models one single dice cube
 {
