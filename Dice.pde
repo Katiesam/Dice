@@ -1,3 +1,4 @@
+Die bob;
 int oneCount, twoCount, threeCount, fourCount, fiveCount, sixCount;
 int diceSum=0;
 
@@ -9,10 +10,7 @@ void setup()
 }
 void draw()
 {
-  //your code here
-  
   background(255);
-  
   for (int x=10; x<250; x+=60) 
   {
     for (int y=10; y<250; y+=60) {
@@ -21,12 +19,10 @@ void draw()
       bob.show();
     }
   }
-  
   fill(0);
   diceSum=oneCount + (2*twoCount) + (3*threeCount) + (4*fourCount) + (5*fiveCount) + (6*sixCount);
   text("Sum of Dice: " + diceSum, 70, 260);
   System.out.println(diceSum);
-  
 }
 void mousePressed()
 {
@@ -52,7 +48,6 @@ class Die //models one single dice cube
 }
   void roll()
   {
-    //your code here
     diceNumber=(int)(Math.random()*6)+1;
   }
   void show()
