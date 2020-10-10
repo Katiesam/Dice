@@ -22,7 +22,6 @@ void draw()
   fill(0);
   diceSum=oneCount + (2*twoCount) + (3*threeCount) + (4*fourCount) + (5*fiveCount) + (6*sixCount);
   text("Sum of Dice: " + diceSum, 70, 260);
-  System.out.println(diceSum);
 }
 void mousePressed()
 {
